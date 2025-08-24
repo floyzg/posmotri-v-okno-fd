@@ -80,7 +80,7 @@ ol {
 }
 
 .button {
-  height: 34px;
+  min-height: 34px;
   border: 1px solid #fff;
   border-width: 1px;
   color: #fff;
@@ -90,7 +90,6 @@ ol {
   line-height: 100%;
   text-align: center;
   background-color: transparent;
-  cursor: pointer;
   cursor: pointer;
 }
 
@@ -173,6 +172,10 @@ ol {
   appearance: none;
 }
 
+.search-form__textfield::placeholder {
+  opacity: 1;
+  color: rgb(255 255 255 / 0.7);
+}
 .search-form__checkbox-list {
   display: flex;
   justify-content: center;
@@ -219,7 +222,6 @@ ol {
 .content__list-container {
   position: relative;
   gap: 30px;
-  padding: 2px;
   overflow: auto;
   block-size: 298px;
 }
@@ -264,7 +266,7 @@ ol {
   overflow: hidden;
   font-family: "Oswald", sans-serif;
   font-size: 30px;
-  line-height: 40px;
+  line-height: 100%;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -280,7 +282,7 @@ ol {
   line-height: 16.2px;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3; /* ограничение строк */
+  -webkit-line-clamp: 4; /* ограничение строк */
 }
 
 .content__video-card-description-container {
